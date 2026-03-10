@@ -1,7 +1,7 @@
-# print("Hello, world!")
-# print('Hello, world! Number two!')
-# print("\"This is a quote from a famous person\"")
-# print('"This is a quote from a famous person"')
+print("Hello, world!")
+print('Hello, world! Number two!')
+print("\"This is a quote from a famous person\"")
+print('"This is a quote from a famous person"')
 # "citat"
 # textsträngar kan skrivas med " " eller ' '
 # detta är en kommentar
@@ -27,22 +27,26 @@ comment
 # + = 5 + 5 = 10
 
 5 + 5  # unused expression. om något är unused, varför finns det då?
+# Vi kan dock ha vårt expression fristående utan att det påverkar programmet
+# Ett expression är något som evalueras till ett värde 5 + 5 evalueras till 10 (heltal)
 
+# Vi kan tilldela ett expression till en variabel
+# Detta är då en referens till något värde som existerar medan scriptet körs
 resultat = 5 + 5  # expression på högra sidan
 # variabel på vänstra sidan
 
 # att något är dynamiskt
 # innebär att vi kan ändra variabler och datatyper som vi vill under körning
 
-heltal = 1
-heltal = 1.0
+heltal = 1 # heltal
+heltal = 1.0 # nu är variabeln heltal en float, alltså flyttal med decimaler
 
 # försök att ha så beskrivande namn som möjligt
 # undvik svenska tecken
 # a-z, små bokstäver och _ mellan orden
-this_is_an_integer = 12
+this_is_an_integer = 12 # Detta signalerar lite mer tanke bakom namnet
 
-# print(type(this_is_an_integer))
+print(type(this_is_an_integer)) # vi kan få ut datatypen med type()
 
 # dynamiska språk känner till datatypen
 # när vi kommer till den raden
@@ -53,7 +57,7 @@ last_name = "Ahola"
 
 # + mellan textsträngar = konkatenering
 full_name = first_name + " " + last_name
-# print(full_name)
+print(full_name)
 
 # kan inte blanda datatyper
 
@@ -76,12 +80,12 @@ x = int("1")
 # x = int("Hej") Detta går inte
 x = int(1.5)  # python klarar av detta men inte "1.5"
 
-# print(x)
+print(x)
 
 text_string = f"{x+2}"  # f-string
 # f-sträng kallas för interpolation
 
-# print(text_string)
+print(text_string)
 
 # jämförelseoperatorer
 
@@ -94,15 +98,15 @@ text_string = f"{x+2}"  # f-string
 
 # Allt ovanför evalueras till sant eller falskt
 
-# result = 2 == 2
-# print(f"Resultatet är: {result}")
+result = 2 == 2
+print(f"Resultatet är: {result}")
 
-# result = 2 == 2
-# print(f"Resultatet är: {result}")
+result = 2 == 2
+print(f"Resultatet är: {result}")
 
 result = 0.1 + 0.2 == 0.3
 
-# print(result, f"0.1 + 0.2 = {0.1 + 0.2}")
+print(result, f"0.1 + 0.2 = {0.1 + 0.2}")
 
 result = 5 > 4 and 5 > 3  # båda måste stämma
 result = 5 > 4 or 1 > 5  # den ena måste stämma
@@ -115,23 +119,23 @@ result = 5 > 4 or 1 > 5  # den ena måste stämma
 # class = 2
 # def = 3
 
-# user_input = input("Ge mig något: ")
+user_input = input("Ge mig något: ")
 
-# print(f"Du skrev {user_input}")
+print(f"Du skrev {user_input}")
 
-# user_input = int(input("Ge mig en siffra: "))
+user_input = int(input("Ge mig en siffra: "))
 
-# print(f"Du skrev siffran {user_input}")
+print(f"Du skrev siffran {user_input}")
 
 x = "TEX-MEX"  # tex-mex är samma som Tex-mex
 
-# print("T" in x) # Sant
-# print("t" in x) # Falskt
+print("T" in x) # Sant
+print("t" in x) # Falskt
 # Python är case-sensitive
 
-# result = x.lower() == "tex-mex"
-# print(x)
-# print(result)
+result = x.lower() == "tex-mex"
+print(x)
+print(result)
 
 # funktioner kräver dot notation
 x.lower()
